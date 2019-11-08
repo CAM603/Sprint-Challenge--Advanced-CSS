@@ -34,15 +34,27 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Adaptive websites use hard coded pixels for layouts along with media query break points for different screen resolutions. Each break point has a specific layout designed to fit a certain screen size. The layouts are usually made for desktop, tablet and mobile devices. Responsive websites use one layout that adapts to all screen sizes across devices by using media queries and relative lengths.  Relative lengths change in size based on the screen size and media queries change the layout of the elements so websites look good at any size.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first means the website was designed with mobile resolution in mind and then the layout is changed as the resolution increases. Mobile first uses min-width media queries. Desktop first means the website was designed with a desktop resolution in mind and then the layout is changed as the resolution decreases. Desktop first uses max-width media queries.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+It normalizes the font to about 10px so we can easily determine what the size will be when using resonsive units such as rems. With the font size set to 62.5%, 1 rem equals 10px so all we need to do to calculate font size is multiply the rem number by 10.
+
 4. How would you describe preprocessing to someone new to CSS?
 
-5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+A preprocessor is another program that gives more functionality to CSS. You code in the preprocessor and it compiles the information to vanilla CSS. The added functionality allows you to write less code and lets the preprocessor do the heavy lifting of translating the new syntax into vanilla css.
 
-You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
+5. What is your favorite concept in preprocessing? What is the concept that gives you the most 
+trouble?
+
+My favorite concept is parametric mixins. With them, I save so much time by invoking them in different elements. The concept that gives me the most troubles are functions. There are so many possibilities with functions and it can be overwhelming and confusing as to when, where and how I should use them.
+
+You are expected to be able to answer all these questions. Your responses contribute to your Sprint 
+Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
 ## Project Set Up
 
@@ -133,3 +145,4 @@ After finishing your required elements, you can push your work further. These go
 * [ ] Create a fixed navigation and add some opacity to the background
 
 * [ ] Create a form that would allow someone to sign up for a Spacewalkers Magazine subscription
+

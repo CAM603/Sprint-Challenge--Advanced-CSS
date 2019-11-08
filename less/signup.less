@@ -1,0 +1,56 @@
+.space_container{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto; 
+    .background_img{
+        width: 100%;
+        background-image: url("/img/space.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        .subscriptions{
+            .layout(row wrap, center, space-evenly);
+            h2{
+                color: white;
+                margin-bottom: 5%;
+                font-size: 3rem;
+                @media(max-width: 600px){
+                    font-size: 2rem;
+                }
+            }
+            @media @phone{
+                .layout(column wrap, center, center);
+            }
+            div{
+                .layout();
+                width: 100% / 3;
+                margin-top: 5%;
+                @media @phone{
+                    width: 100%;
+                }
+                h2,p{
+                    text-align: center;
+                }
+            }
+        }
+        .sign_up{
+            height: 700px;
+            color: white;
+            .width();
+            .layout(column wrap, center, center);
+            @media @phone {
+                .layout(row wrap, center, center);
+            }
+            input{
+                margin: 2%;
+            }
+            button{
+                color: black;
+                background: white;
+            }
+            div{
+                .layout(cloumn wrap, center, center);
+                width: 50%;
+            }
+        }
+    }
+}
