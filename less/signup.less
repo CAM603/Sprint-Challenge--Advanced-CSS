@@ -33,11 +33,12 @@
             }
         }
         .sign_up{
-            height: 600px;
+            height: 700px;
             color: white;
-            .layout(row wrap, center, center);
+            .width();
+            .layout(column wrap, center, center);
             @media @phone {
-                .layout(column wrap, center, center);
+                .layout(row wrap, center, center);
             }
             input{
                 margin: 2%;
@@ -45,6 +46,10 @@
             button{
                 color: black;
                 background: white;
+            }
+            div{
+                .layout(cloumn wrap, center, center);
+                width: 50%;
             }
         }
     }
