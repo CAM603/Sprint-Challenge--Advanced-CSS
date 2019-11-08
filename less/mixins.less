@@ -1,7 +1,31 @@
 // Mixins Here
+
+// Full Width
+.width(){
+    width: 100%;
+}
+
+// For Layout
 .layout(@f-flow: row wrap, @j-content: center, @a-items: center){
 	display: flex;
 	flex-flow: @f-flow;
 	justify-content: @j-content;
 	align-items: @a-items;
+}
+
+// For Buttons
+.custom-button(@bg-color, @width, @color){
+    .layout();
+    background-color: @bg-color;
+    cursor: pointer;
+    width: @width;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+    color: @color;
+    transition: 500ms;
+    &:hover{
+        color: @bg-color;
+        background-color: @color;
+    }
 }
