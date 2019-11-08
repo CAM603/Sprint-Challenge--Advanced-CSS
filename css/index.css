@@ -321,3 +321,78 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.space_container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+.space_container .background_img {
+  width: 100%;
+  background-image: url("/img/space.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.space_container .background_img .subscriptions {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: space-evenly;
+}
+.space_container .background_img .subscriptions h2 {
+  color: white;
+  margin-bottom: 5%;
+  font-size: 3rem;
+}
+@media (max-width: 600px) {
+  .space_container .background_img .subscriptions h2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .space_container .background_img .subscriptions {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.space_container .background_img .subscriptions div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 33.33333333%;
+  margin-top: 5%;
+}
+@media (max-width: 500px) {
+  .space_container .background_img .subscriptions div {
+    width: 100%;
+  }
+}
+.space_container .background_img .subscriptions div h2,
+.space_container .background_img .subscriptions div p {
+  text-align: center;
+}
+.space_container .background_img .sign_up {
+  height: 600px;
+  color: white;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .space_container .background_img .sign_up {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.space_container .background_img .sign_up input {
+  margin: 2%;
+}
+.space_container .background_img .sign_up button {
+  color: black;
+  background: white;
+}

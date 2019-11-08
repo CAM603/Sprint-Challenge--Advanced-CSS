@@ -1,0 +1,82 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>SpaceWalkers</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+
+
+<!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<!-- navigation code here -->
+
+    <div class="navigation">
+        <div class="heading">
+            <h1>SpaceWalkers</h1>
+        </div>
+        <nav class="links">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+            <a href="#">Sign In</a>
+        </nav>
+    </div> 
+    <section class="space_container">
+        <div class="background_img">
+            <section class="subscriptions">
+                <div class="one_year">
+                    <h2>One Year Subscription</h2>
+                    <p>Enjoy 12 magazines for only $19.95!</p>
+                </div>
+                <div class="two_year">
+                    <h2>Two Year Subscription</h2>
+                    <p>Enjoy 12 magazines for only $29.95</p>
+                </div>
+                <div class="unlimited">
+                        <h2>Unlimited Subscription</h2>
+                        <p>Unlimited magazines for only $299.95</p>
+                </div>
+            </section>
+            <form class="sign_up">
+                
+                    <input name="subscription" id="one" type="radio" value="one" required>
+                    <label for="one">1 Year Subscription</label>
+                
+                    <input name="subscription" id="two" type="radio" value="two" required>
+                    <label for="two">2 Year Subscription</label>
+                
+                    <input name="subscription" id="unlimited" type="radio" value="unlimited" required>
+                    <label for="unlimited">Unlimited Subscriptions</label>
+                
+                    <label for="firstname">First Name</label>
+                    <input name="firstname" id="firstname" type="text" placeholder="First Name" required>
+                
+                    <label for="lastname">Last Name</label>
+                    <input name="lastname" id="lastname" type="text" placeholder="Last Name" required>
+                
+                    <label for="email">Email:</label>
+                    <input name="email" id="email" type="email" placeholder="email" required>
+                
+                    <label for="phone">Phone Number:</label>
+                    <input name="phone" id="phone" type="tel" placeholder="(555)555-5555" required>
+                
+                    <button>submit</button>
+                </div>
+                </form>
+        </div>
+    </section>
+    <footer>
+        <p>Copyright SpaceWalkers 2018</p>
+    </footer>
+</body>
+</html>
