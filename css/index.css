@@ -160,6 +160,31 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.navigation {
+  background: #f4f4f4;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.navigation .heading {
+  margin-top: 2%;
+  font-size: 5rem;
+}
+.navigation .links {
+  margin: 2% 0;
+  width: 50%;
+  max-width: 600px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation .links a {
+  font-size: 2rem;
+  text-decoration: none;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -169,6 +194,12 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro .header_img {
+  width: 100%;
+  background-image: url("/img/main-header.png");
+  border-radius: 1em;
+  padding: 100px;
 }
 .home .intro h2 {
   padding: 15px;
