@@ -82,9 +82,14 @@
       }
 
       .btn {
+
         .custom-button(@btn-bg-color, 40% , @border-real);
         @media @phone{
           .width();
+        }
+        a{
+          text-decoration: none;
+          color: lighten(@border-real, 40%);
         }
       }
     }
